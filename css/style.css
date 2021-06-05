@@ -1,0 +1,151 @@
+/* Common Style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    width: 90%;
+    margin: auto;
+}
+
+/* Header Style */
+header {
+    text-align: center;
+}
+
+/* Main Style */
+main {
+    width: 100%;
+    padding: 15px;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.products {
+    width: 69%;
+    float: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 0 1%;
+}
+
+.products::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.product {
+    width: 31%;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+.product button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.product button:hover {
+    opacity: 0.9;
+}
+
+.product-title, .cart-title {
+    text-align: center;
+}
+
+.cart {
+    width: 29%;
+    float: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(44, 144, 238);
+}
+
+/* Alert Style */
+.alert-success, .alert-failed {
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.alert-success {
+    background-color: rgb(114, 199, 114);
+}
+
+.alert-failed {
+    background-color: rgb(230, 65, 65);
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+}
+
+.heart {
+    color: red;
+}
+
+/* For Responsive */
+@media only screen and (max-width: 900px) {
+    .products {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cart {
+        width: 100%;
+        margin-left: 5px;
+    }
+}
